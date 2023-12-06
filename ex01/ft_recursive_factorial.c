@@ -10,4 +10,30 @@
 /*                                                                            */
 /* ************************************************************************** */
 
+int	ft_recursive_factorial(int nb)
+{
+	if (nb && nb >= 0)
+	{
+		if (nb > 1)
+		{
+			return(nb * ft_recursive_factorial(nb - 1));
+		}
+		else
+		{
+			return (1);
+		}
+	}
+	else
+	{
+		return (0);
+	}
+}
+/*
+#include <stdio.h>
+int	main(void)
+{
+	int	factorial;
 
+	factorial = ft_recursive_factorial(5);
+	printf("Factorial is: %d\n", factorial);
+} */
