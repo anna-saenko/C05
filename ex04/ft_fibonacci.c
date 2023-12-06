@@ -33,7 +33,12 @@ int	ft_fibonacci(int index)
 int	main(void)
 {
 	int	result;
+	int	i;
 
-	result = ft_fibonacci(6);
-	printf("Result: %d\n", result);
+	i = -5;
+	while (i++ < 10)
+	{
+		result = ft_fibonacci(i);
+		printf("%dth fibonacci: %d\n", i, result);
+	}
 } */

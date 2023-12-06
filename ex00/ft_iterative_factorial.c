@@ -39,8 +39,13 @@ int	ft_iterative_factorial(int nb)
 #include <stdio.h>
 int	main(void)
 {
+	int i;
 	int	factorial;
 
-	factorial = ft_iterative_factorial(5);
-	printf("Factorial is: %d\n", factorial);
+	i = -3;
+	while (i++ < 10)
+	{
+		factorial = ft_iterative_factorial(i);
+		printf("Factorial of %d is: %d\n", i, factorial);
+	}
 } */
