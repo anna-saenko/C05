@@ -10,4 +10,30 @@
 /*                                                                            */
 /* ************************************************************************** */
 
+int	ft_fibonacci(int index)
+{
+	if (index >= 0)
+	{
+		if (index <= 1)
+		{
+			return (index);
+		}
+		else
+		{
+			return (ft_fibonacci(index - 1) + ft_fibonacci(index - 2));
+		}
+	}
+	else
+	{
+		return (-1);
+	}
+}
+/*
+#include <stdio.h>
+int	main(void)
+{
+	int	result;
 
+	result = ft_fibonacci(6);
+	printf("Result: %d\n", result);
+} */
