@@ -10,4 +10,37 @@
 /*                                                                            */
 /* ************************************************************************** */
 
+int	ft_iterative_power(int nb, int power)
+{
+	int	i;
+	int	result;
 
+	if (power < 0)
+	{
+		return (0);
+	}
+	else if (power == 0)
+	{
+		return (1);
+	}
+	else
+	{
+		i = 1;
+		result = nb;
+		while (i < power)
+		{
+			result *= nb;
+			i++;
+		}
+		return (result);
+	}
+}
+/*
+#include <stdio.h>
+int	main(void)
+{
+	int result;
+
+	result = ft_iterative_power(-3, 3);
+	printf("Result: %d\n", result);
+} */
