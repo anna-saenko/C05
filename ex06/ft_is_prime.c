@@ -10,4 +10,47 @@
 /*                                                                            */
 /* ************************************************************************** */
 
+int	ft_is_prime(int nb)
+{
+	int	i;
 
+	if (nb > 1)
+	{
+		i = 2;
+		while (i <= nb / 2)
+		{
+			if (nb % i == 0)
+			{
+				return (0);
+			}
+			i++;
+		}
+		return (1);
+	}
+	else
+	{
+		return (0);
+	}
+}
+/*
+#include <stdio.h>
+int	main(void)
+{
+	int	i;
+	int result;
+
+	i = -2;
+	while (i < 100)
+	{
+		result = ft_is_prime(i);
+		if (result == 0)
+		{
+			printf("%d isn't \n", i);
+		}
+		else
+		{
+			printf("%d is prime\n", i);
+		}
+		i++;
+	}
+} */
