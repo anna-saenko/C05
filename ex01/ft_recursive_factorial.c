@@ -12,7 +12,7 @@
 
 int	ft_recursive_factorial(int nb)
 {
-	if (nb && nb >= 0)
+	if (nb >= 0)
 	{
 		if (nb > 1)
 		{

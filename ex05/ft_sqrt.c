@@ -14,10 +14,9 @@ int	ft_sqrt(int nb)
 {
 	int	i;
 
-	i = 0;
-	if (nb >= 0)
-	{
-		while (i * i <= nb)
+	i = 1;
+
+	while (i * i <= nb && i <= 46340)
 		{
 			if (i * i == nb)
 			{
@@ -25,7 +24,6 @@ int	ft_sqrt(int nb)
 			}
 			i++;
 		}
-	}
 	return (0);
 }
 /*
@@ -35,7 +33,7 @@ int	main(void)
 	int	i;
 	int	result;
 
-	i = -2;
+	i = 0;
 	while (i <= 100)
 	{
 		result = ft_sqrt(i);
